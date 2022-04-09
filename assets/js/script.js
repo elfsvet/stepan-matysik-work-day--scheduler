@@ -17,3 +17,10 @@
 // THEN the text for that event is saved in local storage
 // WHEN I refresh the page
 // THEN the saved events persist
+
+
+// we need to have a container with fields for 9 - 5pm 
+// the field in past should have grey background
+// the active hour field should be red background
+// the future fields should be in green color
+// 
