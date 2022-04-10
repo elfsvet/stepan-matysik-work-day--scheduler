@@ -105,15 +105,23 @@ var pastPresentFutureCheck = function () {
         // the field in past should have grey background
         // check if the time past or not and current
         if (blockHour < currentHour) {
+            $(this).children(".task").removeClass("future");
+            $(this).children(".task").removeClass("present");
             $(this).children(".task").addClass("past");
+
 
             // the active hour field should be red background
         } else if (blockHour === currentHour) {
+            $(this).children(".task").removeClass("past");
+            $(this).children(".task").removeClass("future");
             $(this).children(".task").addClass("present");
 
             // the future fields should be in green color
         } else {
+            $(this).children(".task").removeClass("present");
+            $(this).children(".task").removeClass("past");
             $(this).children(".task").addClass("future");
+
         }
     });
 };
@@ -125,7 +133,7 @@ pastPresentFutureCheck();
 // continue to check if hour past every minute
 setInterval(function(){
     pastPresentFutureCheck();
-}, 1000*10)
+}, 10000)
 loadTasks();
 // save the data to localStorage
 saveLocal();

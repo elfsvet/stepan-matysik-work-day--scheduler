@@ -4,9 +4,8 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
+* [Build with](#build-with)
 * [Setup](#setup)
-* [Instructions](#instructions)
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Usage](#usage)
@@ -21,7 +20,7 @@
 This is a basic day planner app that loops through the hours of 9am - 5pm(typical working hours) for a specific date, which is the current day that the user opens the app. The app uses moment.js to handle time. The app also allows the user to enter and save text into any task area. The data will be saved to the localStorage of the browser. The past hours are highlighted gray, the current hour red, and future hours green.
 
 
-## Technologies
+## Build With
 Project is created with:
 - HTML
 - CSS
@@ -34,45 +33,23 @@ Project is created with:
 ## Setup
 To open this project in vscode using git in Terminal/Git Bash:
 
-```
-$ mkdir code-quiz
-$ cd code-quiz
+```bash 
+$ cd <to the directory you would like to store the project>
 $ git clone https://github.com/elfsvet/stepan-matysik-work-day-scheduler.git
 $ code .
 ```
 
-## Instructions
-1. Click "Start Quiz":
-   - Timer on the top right will start to run
-   - Total time is 66 second with 11 questions in total
-   - The "View High Scores" link on the top left will direct the user to view all current high scores, if any.
-
-
-2. A series of questions are presented with multiple choice answers:
-   - If the question is answered wrong, 10 seconds will be deducted to the timer
-   - If the question is answered correctly, will add 10 to the score
-   - After a question is answered, it will show on the bottom whether it is answered correctly or wrong.
-  
-3. When all questions are answered or the timer reaches 0, game is over.
-   
-4. When game is over, the user can enter initial and score, click "Submit" to save to high scores to local storage.
-   
-5. Then it will show a list of saved high scores.
-   
-6. The user then will have the option to click on "Go Back" to start quiz again, or "Clear High Scores" to clear saved scores.
-
-
 ## Features
-- API
-- 
-- localStorage
+- Mobile Compatibility
+- Fast Load Times
+- Browser Consistency
 
 ## Screenshots
 ![Example screenshot](./assets/images/example.jpg)
 
 
 ## Usage
-For practising and checking your knowledge.
+To keep up with you daily work routine.
 
 ## Project Status
 Project is: _complete_
