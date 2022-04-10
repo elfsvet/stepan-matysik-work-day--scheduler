@@ -37,7 +37,7 @@ To open this project in vscode using git in Terminal/Git Bash:
 ```
 $ mkdir code-quiz
 $ cd code-quiz
-$ git clone https://github.com/elfsvet/steapan-matysik-code-quiz.git
+$ git clone https://github.com/elfsvet/stepan-matysik-work-day-scheduler.git
 $ code .
 ```
 
@@ -68,7 +68,7 @@ $ code .
 - localStorage
 
 ## Screenshots
-![Example screenshot](./assets/images/small-screen.jpg)
+![Example screenshot](./assets/images/example.jpg)
 
 
 ## Usage
@@ -79,8 +79,8 @@ Project is: _complete_
 
 ## Room for Improvement
 To do:
-- Can have a numbers in front of answers.
-- Can shuffle the order of questions and answers.
+- Can have highlight text then clicked in a text area.
+- Can add a button to clean the schedule or clean a hour line
 
 ## Acknowledgements
 - This project was inspired by UM Coding Boot Camp
