@@ -1,6 +1,6 @@
 // var for fast changing time schedule
 var startWork = 9;
-var endWork = 17;
+var endWork = 20;
 
 // the current day displayed at the top of the calendar    
 var getCurrentDate = function () {
@@ -31,11 +31,10 @@ var createSchedule = function (startTime, endTime) {
 
         // creates save button
         var saveBtn = $('<button>')
-            .addClass('btn saveBtn col-1 col-md-1')
+            .addClass('btn saveBtn col-3 col-md-1')
             // we will change it to save icon
             // .text("Save")
             // i didnt like what iconify stores cache in local storage
-            // .append($("<span>").addClass("iconify").attr("data-icon", "zmdi:floppy"));
             .append($("<span>").addClass("far fa-save"));
 
 
@@ -106,15 +105,15 @@ var pastPresentFutureCheck = function () {
         // the field in past should have grey background
         // check if the time past or not and current
         if (blockHour < currentHour) {
-            $(this).addClass("past");
+            $(this).children(".task").addClass("past");
 
             // the active hour field should be red background
         } else if (blockHour === currentHour) {
-            $(this).addClass("present");
+            $(this).children(".task").addClass("present");
 
             // the future fields should be in green color
         } else {
-            $(this).addClass("future");
+            $(this).children(".task").addClass("future");
         }
     });
 };
@@ -123,6 +122,11 @@ var pastPresentFutureCheck = function () {
 getCurrentDate();
 createSchedule(startWork, endWork);
 pastPresentFutureCheck();
+// continue to check if hour past every minute
+setInterval(function(){
+    pastPresentFutureCheck();
+    
+}, 1000*60)
 loadTasks();
 // save the data to localStorage
 saveLocal();
