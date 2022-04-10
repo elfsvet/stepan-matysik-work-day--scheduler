@@ -1,46 +1,47 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size  : 16px;
   line-height: 1;
 }
 
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
+textarea {
+  background : transparent;
+  border     : none;
+  resize     : none;
+  color      : #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  padding    : 10px;
 }
 
 .jumbotron {
-  text-align: center;
+  text-align      : center;
   background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
+  color           : black;
+  border-radius   : 0;
+  border-bottom   : 10px solid black;
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
-  text-align: center;
+.time-block {
+  text-align   : center;
   border-radius: 15px;
 }
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  height     : 80px;
+  border-top : 1px solid white;
+  ;
 }
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-  font-weight: bolder;
+  color           : #000000;
+  border-top      : 1px dashed #000000;
+  font-weight     : bolder;
 }
 
 .past {
@@ -49,7 +50,7 @@ textarea{
 
 .present {
   background-color: #ff6961;
-  /* color: white; */
+  /* color        : white; */
 }
 
 .future {
@@ -57,23 +58,24 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
+  border-left               : 1px solid black;
+  border-top-right-radius   : 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+  background-color          : #06AED5;
+  color                     : white;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size : 20px;
   transition: all .5s ease-in-out;
 }
 
 .saveBtn:active {
   background-color: #048caa;
 }
+
 /* title is to big on 350 and lower screens */
-@media screen and (max-width: 350px)  {
+@media screen and (max-width: 350px) {
   .display-4 {
     font-size: 2.5rem;
   }

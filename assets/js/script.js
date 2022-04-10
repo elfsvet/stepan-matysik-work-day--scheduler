@@ -55,8 +55,6 @@ var createSchedule = function (startTime, endTime) {
         // .append(textArea)
         // .append(saveBtn);
 
-
-
         // add div textarea and button inside the div that inside the container class
         $(".container").append(hourContainer.append([
             hourDiv,
@@ -131,7 +129,7 @@ getCurrentDate();
 createSchedule(startWork, endWork);
 pastPresentFutureCheck();
 // continue to check if hour past every minute
-setInterval(function(){
+setInterval(function () {
     pastPresentFutureCheck();
 }, 10000)
 loadTasks();
