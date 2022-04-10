@@ -19,8 +19,76 @@
 // THEN the saved events persist
 
 
-// we need to have a container with fields for 9 - 5pm 
-// the field in past should have grey background
-// the active hour field should be red background
-// the future fields should be in green color
-// 
+
+
+var schedule = [];
+// object to store and update values in localStorage and from what we get as input
+var container = $(".container");
+// for (var time = 9; time <18; time++){
+    //     container.append("<"
+    // };
+    // the current day displayed at the top of the calendar    
+    // to display the day we are at...the header in paragraph
+    var getCurrentDate = function () {
+        var currentDate = moment().format('dddd, MMMM Do YYYY');
+        $("#currentDay").text(currentDate);
+    };
+    
+    
+    // create time blocks and standard business hours
+    // we need to have a container with fields for 9 - 5pm 
+    // on the right should be display an hour.
+    for (var i = 9; i<=17;i++) {
+        var newHour = $("<p>").addClass("p-2 hour-"+i)
+        .text(i+ ":00");
+        container.append(newHour);
+    }
+
+
+
+
+
+
+    // the field in past should have grey background
+    // the active hour field should be red background
+    // the future fields should be in green color
+    
+    // event on click in the time blocks i can input text as event
+    
+    // event on click button save. saves text into local storage
+    // every field should have a save button to save in localstorage on the left
+
+    // refresh the page should keep only saved events.
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// save the data to localStorage
+
+// load the data function
+
+// displays the day in the header
+getCurrentDate();
