@@ -40,21 +40,20 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  font-weight: bolder;
 }
 
 .past {
   background-color: #d3d3d3;
-  color: black;
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  /* color: white; */
 }
 
 .future {
   background-color: #77dd77;
-  color: black;
 }
 
 .saveBtn {
@@ -72,4 +71,10 @@ textarea{
 
 .saveBtn:active {
   background-color: #048caa;
+}
+/* title is to big on 350 and lower screens */
+@media screen and (max-width: 350px)  {
+  .display-4 {
+    font-size: 2.5rem;
+  }
 }

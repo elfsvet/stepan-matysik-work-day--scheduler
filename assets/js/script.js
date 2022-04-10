@@ -125,8 +125,7 @@ pastPresentFutureCheck();
 // continue to check if hour past every minute
 setInterval(function(){
     pastPresentFutureCheck();
-    
-}, 1000*60)
+}, 1000*10)
 loadTasks();
 // save the data to localStorage
 saveLocal();

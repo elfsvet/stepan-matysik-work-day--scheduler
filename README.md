@@ -1,5 +1,5 @@
 # Stepan Matysik's Work Day Scheduler
-> Work Day Scheduler project. A website with a Work Day Scheduler.
+> Work Day Scheduler project. A website with a schedule of the day.
 > Live demo [_here_](https://elfsvet.github.io/stepan-matysik-work-day-scheduler/). 
 
 ## Table of contents
@@ -18,7 +18,8 @@
 
 
 ## General Info
-This is a .
+This is a basic day planner app that loops through the hours of 9am - 5pm(typical working hours) for a specific date, which is the current day that the user opens the app. The app uses moment.js to handle time. The app also allows the user to enter and save text into any task area. The data will be saved to the localStorage of the browser. The past hours are highlighted gray, the current hour red, and future hours green.
+
 
 ## Technologies
 Project is created with:
@@ -28,6 +29,8 @@ Project is created with:
 - jQuery
 - jQuery UI
 - Bootstrap
+- Moment.js
+
 ## Setup
 To open this project in vscode using git in Terminal/Git Bash:
 
@@ -61,7 +64,7 @@ $ code .
 
 ## Features
 - API
-- DOM
+- 
 - localStorage
 
 ## Screenshots
