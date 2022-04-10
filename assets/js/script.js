@@ -38,10 +38,32 @@ var container = $(".container");
     // create time blocks and standard business hours
     // we need to have a container with fields for 9 - 5pm 
     // on the right should be display an hour.
+
+    // created hour div
     for (var i = 9; i<=17;i++) {
-        var newHour = $("<p>").addClass("p-2 hour-"+i)
-        .text(i+ ":00");
-        container.append(newHour);
+        
+        var newTextArea = $('<textarea>')
+        .addClass('col-md-10 task')
+        
+        var newBtn = $('<button>')
+        .addClass('btn saveBtn col-md-1')
+        .text("Save");
+        
+        var newHourDiv = $("<div>")
+        .addClass("col-md-1 hour")
+        .text(i+ ":00")
+        
+        var newHourContainer = $('<div>')
+        .attr("id", "hour-"+i)
+        .addClass("row time-block")
+        .append(newHourDiv)
+        .append(newTextArea)
+        .append(newBtn);
+
+
+
+        // add div in the container
+        container.append(newHourContainer);
     }
 
 
