@@ -1,6 +1,6 @@
 // var for fast changing time schedule
 var startWork = 9;
-var endWork = 20;
+var endWork = 17;
 
 // the current day displayed at the top of the calendar    
 var getCurrentDate = function () {
