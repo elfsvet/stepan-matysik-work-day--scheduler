@@ -1,6 +1,6 @@
 // var for fast changing time schedule
 var startWork = 9;
-var endWork = 17;
+var endWork = 20;
 
 // the current day displayed at the top of the calendar    
 var getCurrentDate = function () {
@@ -122,5 +122,6 @@ var pastPresentFutureCheck = function () {
 getCurrentDate();
 createSchedule(startWork, endWork);
 pastPresentFutureCheck();
+loadTasks();
 // save the data to localStorage
 saveLocal();
